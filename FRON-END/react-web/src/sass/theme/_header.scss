@@ -1,0 +1,113 @@
+//header_area css
+
+/* Showcase */
+#showcase {
+    min-height: 480px;
+    // color: black;
+  
+}
+.bg-banner {
+    position: absolute;
+    background: url('../../img/banner/banner-bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 480px;
+    z-index: -1;
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
+}
+
+  
+   #showcase p {
+    margin-bottom: 10px;
+    color: $title-color;
+    font-size: 16px;
+    // width: 200px;
+    max-width: 500px;
+  }
+  .box-1 {
+    display: grid;
+    justify-content: end;
+     align-items: center;
+    //  align-content: end;
+    //  align-self: end;
+    grid-template-rows: repeat(3, 2fr);
+    grid-gap: 5px;
+  }
+ 
+  #showcase h1 {
+    font-size: 28px;
+    color: black;
+  }
+  #showcase .btn {
+     padding: 20px 20px;
+     border-radius: 50%;
+     box-shadow: 0 10px 20px rgba(255, 108, 0, 0.2);
+     background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+     color: white;
+  }
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+    display: none;
+}
+.main-nav {
+    background: #fff;
+    margin: 0px auto 0;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    height: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     ul{
+        display: flex;
+    }
+    ul li {
+          padding:0 20px;
+         
+    }
+    ul li a {
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    ul li i {
+        color: $text-color;
+    }
+    ul li a:hover {
+        color: #ffba00;
+    }
+   
+}
+@media(max-width: 768px) {
+    .menu-btn {
+        display: block;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .main-nav ul.right-menu{
+        display: block;
+        position: absolute;
+        
+        top:90px;
+        width: 100%;
+        height: auto;
+        z-index: 199;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        background: white;
+    }
+    .main-nav ul.right-menu li {
+        padding: 10px;
+    }
+    .main-nav ul.right-menu.show {
+        display: none;
+        
+    }
+
+
+}

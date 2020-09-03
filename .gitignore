@@ -1,0 +1,9 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+FRONT-END/react-gatsby-web/node_modules
+FRONT-END/react-nextjs-web/node_modules
+FRONT-END/react-web/node_modules
+FRONT-END/reactnative-app/node_modules
+/nodemon.json

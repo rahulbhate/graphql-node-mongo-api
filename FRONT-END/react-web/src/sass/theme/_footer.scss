@@ -1,50 +1,50 @@
 //--------- start footer Area -------------//
 
-    .footer-area {
+.footer-area {
+    display: grid;
+    background-color: #3f4049;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+    padding: 60px;
+    #{&}__nesting {
         display: grid;
-        background-color: #222222;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 30px;
-        margin: 0 auto;
-        padding: 60px;
-        #{&}__nesting {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-        }
-        #{&}__nesting p  {
-            padding: 0px;
-            margin :0px;
-        }
-        #{&}__ i, a {
-            color: white;
-            padding: 10px;
-            &:hover{
-                color: $link-color;
-            }
-        }
-        #{&}__nesting-row {
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-        }
-        #{&}__h6 {
-            color: #fff;
-            font-size: 18px;
-            font-weight: 600;
-            &:hover {
-                color: $text-color;
-            }
-            @media (max-width: 767px) {
-                margin-bottom: 15px;
-            }
-        }
-        @media(max-width: 1068px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media(max-width: 670px) {
-            grid-template-columns: 1fr;
+        grid-template-columns: 2fr 1fr;
+    }
+    #{&}__nesting p  {
+        padding: 0px;
+        margin :0px;
+    }
+    #{&}__ i, a {
+        color: white;
+        padding: 10px;
+        &:hover{
+            color: $link-color;
         }
     }
-    
+    #{&}__nesting-row {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #{&}__h6 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        &:hover {
+            color: $text-color;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+    @media(max-width: 1068px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 670px) {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 //--------- end footer Area -------------//
 

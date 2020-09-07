@@ -45,7 +45,11 @@ a {
 		outline: none;
 	}
 }
-
+img {
+	height: auto;
+	max-width: 500px;
+	width: 100%;
+}
 button:focus {
 	outline: none;
 	box-shadow: none;
